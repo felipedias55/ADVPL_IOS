@@ -37,7 +37,7 @@ DEFINE MSDIALOG oDlg TITLE cTitulo FROM 000,000 TO 600,800 PIXEL
 
 @ 90,10 CHECKBOX oChkBox VAR lCheck PROMPT "ativo" SIZE 60,15 OF oDlg PIXEL
 
-@ 150,120 BUTTON "OK" FONT oFont SIZE 080, 047 PIXEL OF oDlg ACTION alert("Nome:" +trim(cnome) + CRLF +"Idade:" + alltrim(cIdade) +;
+@ 150,120 BUTTON "OK" FONT oFont SIZE 080, 047 PIXEL OF oDlg ACTION alert("Nome:" +alltrim(cnome) + CRLF +"Idade:" + alltrim(cIdade) +;
  CRLF + "Endereço:" + alltrim(cEnde) + CRLF + "Profissão:" + alltrim(cProfi) + CRLF + u_Valid(lCheck))
 @ 200,120 BUTTON "Cancelar" FONT oFont SIZE 080, 047 PIXEL OF oDlg  ACTION oDlg:End()
 
